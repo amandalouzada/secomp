@@ -1,0 +1,16 @@
+/* Empty. Add your own CSS if you like */
+.inicio {
+  background-color: #0e4e79;
+}
+
+.palestrante {
+  background-color: #485d6b;
+}
+
+.inicio h2, .inicio h3, .inicio h4 {
+  color: #fff;
+}
+
+.img-responsiva {
+  max-width: 100%;
+}
