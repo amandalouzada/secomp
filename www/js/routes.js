@@ -19,6 +19,16 @@ angular.module('starter.routes', [])
     }
   })
 
+  .state('app.cronograma', {
+    url: '/cronograma',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/cronograma.html',
+        controller: 'CronogramaCtrl'
+      }
+    }
+  })
+
   .state('app.palestrante', {
     url: '/palestrante',
     views: {
