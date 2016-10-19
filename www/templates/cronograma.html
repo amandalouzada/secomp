@@ -1,16 +1,19 @@
 <ion-view view-title="Cronograma">
   <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
   <div class="tabs">
-    <a class="tab-item" ng-repeat="cronograma in cronogramas" href="#/app/cronograma">
+    <a class="tab-item" ng-repeat="cronograma in cronogramas" ng-click="definirDia(cronograma.id)">
       {{cronograma.dia}}
     </a>
   </div>
 </div>
   <ion-content class="cronograma has-tabs-top">
-    <div class="list card" ng-repeat="cronograma in cronogramas">
-      <div class="item item-icon-left">
-        <h2>Horário</h2>
-        <h2>Palestra</h2>
+
+    <div ng-repeat="cronograma in cronogramas">
+      <div class="list card" ng-repeat="evento in cronograma.evento" ng-show="cronograma.id==dia">
+        <div class="item item-icon-left">
+          <h2>{{evento.horario}}</h2>
+          <h2>{{evento.palestra}}</h2>
+        </div>
       </div>
     </div>
   </ion-content>
