@@ -4,11 +4,11 @@ angular.module('starter.controllers', [])
 })
 
 .controller('CronogramaCtrl', function($scope) {
-  $scope.cronograma= [{
+  $scope.cronogramas= [{
       id:0,
       dia:'18/10',
       evento: [{
-        palestrante: 'Amanda',
+        palestra: 'Amanda',
 
 
         horario:'14:00 - 18:00'
@@ -17,10 +17,10 @@ angular.module('starter.controllers', [])
       id:1,
       dia:'19/10',
       evento: [{
-        palestrante: 'Warley',
+        palestra: 'Warley',
         horario:'14:00 - 18:00'
       },{
-        palestrante: 'Ary',
+        palestra: 'Ary',
         horario:'18:00 - 20:00'
       }]
   }];
